@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function count(str) {
+        let vowels = "aeiou";
+        let consonents = "bcdfghjklmnpqrstvwxyz";
+        str = str.toLowerCase();
+        str = str.replace(" ", ""); // it will replace only first space
+        // str = str.replace(/ /g, ""); // it will replace all the spaces
+        let vow = 0;
+        let cons = 0;
+        console.log(str.length);
+        for (let elem = 0; elem <= str.length; elem++) {
+          if (vowels.includes(str[elem])) {
+            vow++;
+          } else if (consonents.includes(str[elem])) {
+            cons++;
+          }
+        }
+        return { vow, cons };
+      }
+      console.log(count("radh ika qw12w 1swe2 dhu 8765mal"));
+    </script>
+  </body>
+</html>

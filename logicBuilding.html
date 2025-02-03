@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   function areaOfRectangle(length, width) {
+      //     if (length <= 0 || width <= 0) {
+      //       throw new RangeError("Number should be positive");
+      //     }
+      //     let area = length * width;
+      //     console.log("Area of a rectangle is: ", area);
+      //   }
+
+      //   areaOfRectangle(20, 40);
+      //   areaOfRectangle(2, 40);
+      //   areaOfRectangle(10, -20);
+      //   areaOfRectangle(-20, 30);
+      //   areaOfRectangle(11, 44);
+
+      ////////////////////////////////////////////////////////////////////////////////////////////
+
+      //   let CheckEvenOdd = (num) => {
+      //     if (num % 2 === 0) {
+      //       console.log("Number is even");
+      //     } else {
+      //       console.log("Number is odd");
+      //     }
+      //   };
+
+      //   let CheckEvenOdd1 = (num) => {
+      //     return num % 2 === 0 ? "Even" : "Odd";
+      //   };
+      //   //   CheckEvenOdd(5);
+      //   //   CheckEvenOdd(-5);
+      //   //   CheckEvenOdd(15);
+      //   //   CheckEvenOdd(-52);
+      //   //   CheckEvenOdd(0);
+
+      //   console.log(
+      //     CheckEvenOdd1(5),
+      //     CheckEvenOdd1(-5),
+      //     CheckEvenOdd1(15),
+      //     CheckEvenOdd1(-52),
+      //     CheckEvenOdd1(0)
+      //   );
+
+      ////////////////////////////////////////////////////////////////////////////////////////////
+
+      //   function smallestNumber(a, b, c) {
+      //     if (a < b && a < c) {
+      //       return a;
+      //     } else if (b < a && b < c) {
+      //       return b;
+      //     } else {
+      //       return c;
+      //     }
+      //   }
+
+      //   function smallestNumber(a, b, c) {
+      //     let smallNum = a;
+      //     if (b < smallNum) {
+      //       smallNum = b;
+      //     }
+      //     if (c < smallNum) {
+      //       smallNum = c;
+      //     }
+      //     return smallNum;
+      //   }
+
+      //   console.log("Smallest Number is: " + smallestNumber(4, 6, -9));
+      //   console.log("Smallest Number is: " + smallestNumber(0, 6, 0));
+      //   console.log("Smallest Number is: " + smallestNumber(4, -64, 9));
+      //   console.log("Smallest Number is: " + smallestNumber(1, 16, 3));
+
+      ////////////////////////////////////////////////////////////////////////////////////////////
+
+      //   function reverseString(str) {
+      //     // str = str.split("").reverse().join("");
+      //     // console.log(str);
+      //     // console.log(str[6]);
+      //     let result = "";
+      //     for (let i = str.length - 1; i >= 0; i--) {
+      //       //   console.log(str[i]);
+      //       result = result + str[i];
+      //     }
+      //     console.log(result);
+      //   }
+      //   reverseString("Radhika");
+      //   reverseString("I want to get selected in TCS");
+      //   reverseString("I love food");
+      //   reverseString("Radhika Dhumal");
+
+      ////////////////////////////////////////////////////////////////////////////////////////////
+
+      //   let myArray = [44, 34, 65, 567, 8, 4, 7, 876, 4, 95, 12, 98776];
+
+      //   //   let reverseArray = myArray.reverse();
+      //   //   console.log(reverseArray);
+
+      //   for (let i = myArray.length - 1; i >= 0; i--) {
+      //     console.log(i + ":" + myArray[i]);
+      //   }
+
+      ////////////////////////////////////////////////////////////////////////////////////////////
+
+      function factorial(num) {
+        let result = 1;
+        for (let i = 1; i <= num; i++) {
+          result *= i;
+        }
+        console.log(result);
+      }
+
+      factorial(9);
+    </script>
+  </body>
+</html>
