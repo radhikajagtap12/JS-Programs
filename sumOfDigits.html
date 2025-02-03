@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function addDigits(num) {
+        let strNum = num.toString();
+        let splitNum = strNum.split("");
+        let digit = 0;
+        splitNum.forEach((num) => {
+          let newNum = parseInt(num);
+          digit = digit + newNum;
+        });
+        return digit;
+      }
+
+      console.log(addDigits(12345678));
+    </script>
+  </body>
+</html>
